@@ -1,0 +1,149 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\definecolor{lightblue}{rgb}{0.68, 0.85, 0.9}
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+\definecolor{olivegreen}{rgb}{0.23, 0.5, 0.21}
+\definecolor{RITOrange}{HTML}{F76902}
+\definecolor{Black}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{name}{olivegreen}
+\colorlet{heading}{olivegreen}
+\colorlet{accent}{Black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{JOSEPH VITA}
+\tagline{Secure Software Architect}
+\personalinfo{
+  \email{jcvita2012@gmail.com}
+  \phone{631-834-8067}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Long Island, NY}
+  \github{www.github.com/Jcvita}
+%  \homepage{example.com/}
+%  \twitter{@joe_life}
+  \newline
+  \linkedin{https://www.linkedin.com/in/joseph-vita-082b32191/
+  }
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+\cvevent{Software Architect}{Eoptic, Inc.}{Jan. 2024 - May 2026}{Williamson, NY}
+\begin{itemize}
+\item Architected and developed a software platform that aggregates \textbf{real-time IoT device messages} to give oil \& gas managers a bird's eye view of events occuring around job sites with intrinsically-safe device requirements. \textbf{Led a small team} to develop a platform including mobile and web frontends, a \textbf{rust} backend using \textbf{GraphQL, Redis, PostgreSQL, InfluxDB, Docker Compose and Gitlab CI/CD} to ensure deployability to both on-site and office on-premise servers.
+\item Assumed the role of \textbf{System Security Officer} to become the company's PoC for cybersecurity compliance to support the COO through \textbf{ATO requirements} and the System Owner through \textbf{CMMC L2} preparations with C3PAO assessors by developing a \textbf{System Security Plan}, managing \textbf{policy and procedure documents}, setting up automated \textbf{GRC systems}, managing \textbf{POA\&M} items and clarifying \& verifying \textbf{NIST control implementations} to create a secure software development lifecycle.
+\item Wrote a \textbf{20-page Direct-To-Phase-II SBIR proposal} and PhD program RFQ for a DARPA opportunity regarding real-time object detection, positioning and tracking using multiple types of sensors. Supported existing imaging projects with \textbf{internal tooling, DevOps and system administration}.
+\end{itemize}
+\divider
+
+\cvevent{Security Software Engineer | Team Lead}{RIT Software Design Lab - DHS Contract}{Dec. 2022 - Dec. 2023}{Rochester, NY}
+\begin{itemize}
+\item Managed a small team of developers to create a friendly and efficient \textbf{AGILE} software development environment. Created ordered and well-defined tasks on a Kanban board to ensure smooth, asynchronous feature development. Gained a deep understanding of industry-standard \textbf{SBOM} projects as well as proprietary SBOM tools to demo software progress to customers and consult remote developers across teams.
+\item Developed a reporting tool for software vendors to attest to \textbf{secure software development life cycle} policies with \textbf{Angular and Node.js}. Using NIST's \textbf{OSCAL} framework, reports can be created combining manual attestations and automated assessments.
+\end{itemize}
+\divider
+
+% \cvevent{Backend Software Engineer}{Vuzix}{Jan. 2022 - Aug. 2022}{Henrietta, NY}
+% \begin{itemize}
+% \item Configured a scalable and cost-effective Azure cloud architecture for a cross platform real time video communication application that links proprietary IoT devices over the internet
+% \item Designed and developed a secure Node.js API with CI/CD, administration, and Unit testing for a small scrum team to use on both web and android platforms
+% \end{itemize}
+
+% \cvproject{Handwritten Digit Classifier}
+% \begin{itemize}
+% \item Used TensorFlow and Keras to classify handwritten digits in 28x28 images with a ~95\% accuracy
+% \smallskip
+% \item Taught myself the basics of machine learning and convolutional neural networks
+% \smallskip
+% \item Learned how to understand large dataset collection and classification 
+% \smallskip
+% \end{itemize}
+% \cvproject{}
+
+% \cvsection{Relevant \newline Coursework}
+% \smallskip
+% \begin{itemize}
+% \item Calculus II, Linear Algebra, Probability \& Statistics
+% \smallskip
+% \item Cybersecurity Policy and Law, Technical Communications
+% \smallskip
+% \item CSII, Programming for Info Sec, Web App Security
+% \smallskip
+% \item Systems Administration, Routing \& Switching
+% \smallskip
+% \item Computer System Security, Network Security \& Forensics
+% \smallskip
+% \item Introduction to Cryptography, Authentication
+% \smallskip
+% \item Risk Management for Information Security
+% \smallskip
+% \item Reverse Engineering Fundamentals, Side Channel Analysis
+% \smallskip
+% \end{itemize}
+
+\cvsection{TECHNICAL SKILLS}
+\smallskip
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{accent}}l@{\hspace{1em}}X@{}}
+Languages & Python, Rust, Dart, Typescript, C++, C, x86 Assembly \\
+Web & Flutter, REST, GraphQL, Supabase \\
+Cloud and Systems & Windows, Ubuntu, Proxmox, Azure \\
+Security & OpnSense, Wireshark, CIS-CAT, NIST, OSCAL, STIG SCAP, Intune \\
+Databases & PostgreSQL, MongoDB, MySQL, Redis, InfluxDB \\
+Tools & Bash, Git \& Gitlab, Docker Compose, OSS GRC, Ansible, LaTeX
+\end{tabularx}
+
+
+
+%\cvsection{PERSONAL SKILLS}
+%\smallskip
+%\begin{itemize}
+%\item Having leadership qualities.
+%\smallskip
+%\item Ability to work under pressure.
+%\smallskip
+%\item Comfortable working independently.
+%\smallskip
+%\item Ability to collaborate as a team and resolve conflicts 
+%\end{itemize}
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
