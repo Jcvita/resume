@@ -1,0 +1,1 @@
+[Resume](JosephVitaResume.pdf)
