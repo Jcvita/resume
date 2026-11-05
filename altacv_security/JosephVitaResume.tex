@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,ragged2e]{altacv}
-\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
 \ifxetexorluatex
   \setmainfont{Carlito}
 \else
@@ -56,13 +56,14 @@
 \cvsection[page1sidebar]{Experience}
 \cvevent{Software Architect}{Eoptic, Inc.}{Jan. 2024 - May 2026}{Williamson, NY}
 \begin{itemize}
-\item Architected and developed a software platform that aggregates \textbf{real-time IoT device messages} to give oil \& gas managers a bird's eye view of events occuring around job sites with intrinsically-safe device requirements. \textbf{Led a small team} to develop a platform including mobile and web frontends, a \textbf{rust} backend using \textbf{GraphQL, Redis, PostgreSQL, InfluxDB, Docker Compose and Gitlab CI/CD} to ensure deployability to both on-site and office on-premise servers.
+\item Architected and developed a software platform that aggregates \textbf{real-time IoT device messages} to give oil \& gas managers a bird's eye view of events occuring around job sites with intrinsically-safe device requirements. \textbf{Led a small team} to develop a platform including mobile and web frontends, a \textbf{Rust} backend using \textbf{GraphQL, Redis, PostgreSQL, InfluxDB, Docker Compose and Gitlab CI/CD} to ensure deployability to both on-site and office on-premise servers.
+\item Leveraged \textbf{Tokio runtimes} and \textbf{Protobuf} serialization to develop highly concurrent and efficient asynchronous data pipelines and connectors for real-time IoT device message handling between on-premise services and 3rd party system integrations. Created \textbf{ROS2} nodes in Rust to integrate imaging system and IMU data with Anduril, Sapient, ATAK, and in-house platforms.
 \item Assumed the role of \textbf{System Security Officer} to become the company's PoC for cybersecurity compliance to support the COO through \textbf{ATO requirements} and the System Owner through \textbf{CMMC L2} preparations with C3PAO assessors by developing a \textbf{System Security Plan}, managing \textbf{policy and procedure documents}, setting up automated \textbf{GRC systems}, managing \textbf{POA\&M} items and clarifying \& verifying \textbf{NIST control implementations} to create a secure software development lifecycle.
-\item Wrote a \textbf{20-page Direct-To-Phase-II SBIR proposal} and PhD program RFQ for a DARPA opportunity regarding real-time object detection, positioning and tracking using multiple types of sensors. Supported existing imaging projects with \textbf{internal tooling, DevOps and system administration}.
+% \item Wrote a \textbf{20-page Direct-To-Phase-II SBIR proposal} and PhD program RFQ for a DARPA opportunity regarding real-time object detection, positioning and tracking using multiple types of sensors. Supported existing imaging projects with \textbf{internal tooling, DevSecOps and system administration}.
 \end{itemize}
 \divider
 
-\cvevent{Security Software Engineer | Team Lead}{RIT Software Design Lab - DHS Contract}{Dec. 2022 - Dec. 2023}{Rochester, NY}
+\cvevent{Security Software Engineer | Team Lead}{RIT Software Design Lab - DHS/CISA Contract}{Dec. 2022 - Dec. 2023}{Rochester, NY}
 \begin{itemize}
 \item Managed a small team of developers to create a friendly and efficient \textbf{AGILE} software development environment. Created ordered and well-defined tasks on a Kanban board to ensure smooth, asynchronous feature development. Gained a deep understanding of industry-standard \textbf{SBOM} projects as well as proprietary SBOM tools to demo software progress to customers and consult remote developers across teams.
 \item Developed a reporting tool for software vendors to attest to \textbf{secure software development life cycle} policies with \textbf{Angular and Node.js}. Using NIST's \textbf{OSCAL} framework, reports can be created combining manual attestations and automated assessments.
@@ -111,12 +112,12 @@
 \smallskip
 \renewcommand{\arraystretch}{1.15}
 \begin{tabularx}{\linewidth}{@{}>{\bfseries\color{accent}}l@{\hspace{1em}}X@{}}
-Languages & Python, Rust, Dart, Typescript, C++, C, x86 Assembly \\
-Web & Flutter, REST, GraphQL, Supabase \\
+Languages & Rust, Python, Dart, C++, Typescript, C, x86 Assembly \\
+Web & Flutter, REST, GraphQL, Supabase, JWT, Certificate Management \\
 Cloud and Systems & Windows, Ubuntu, Proxmox, Azure \\
 Security & OpnSense, Wireshark, CIS-CAT, NIST, OSCAL, STIG SCAP, Intune \\
 Databases & PostgreSQL, MongoDB, MySQL, Redis, InfluxDB \\
-Tools & Bash, Git \& Gitlab, Docker Compose, OSS GRC, Ansible, LaTeX
+Tools & Bash, Git \& Gitlab, Docker Compose, Open Source GRC, Ansible, LaTeX
 \end{tabularx}
 
 
